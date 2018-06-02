@@ -40,6 +40,26 @@
 
 ;yamato
 [chara_new  name="yamato"  storage="chara/yamato/normal.png" jname="やまと" ]
+[iscript] 
+
+alert("ajax通信開始。"); 
+
+$.getJSON("http://api.tyrano.jp?q=Tokyo,jp&callback=?", function(data){ 
+//読み込み完了 
+alert("Data Loaded: " + data); 
+
+//ラベルの位置までジャンプ 
+TG.kag.ftag.startTag("jump",{target:"*end_load"}); 
+
+}); 
+
+[endscript] 
+
+[s] 
+
+*end_load 
+ajax通信完了後にここが実行される 
+
 
 #
 さて、ゲームが簡単に作れるというから、来てみたものの[p]
