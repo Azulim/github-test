@@ -2,13 +2,18 @@
 [cm]
 
 @clearstack
-@bg storage ="title.jpg" 
-@wait time = 200
+@bg storage ="note.jpg" 
+
 
 *start 
 
-[button x=100 y=320 graphic="title/hajimari.png" storage="story/scene1.ks" ]
-[button x=100 y=490 graphic="title/honnou.png" storage="story/scene1.ks" ]
+[button x=50 y=20 graphic="title/hajimari.png" storage="story/scene1.ks" ]
+[button x=50 y=100 graphic="title/honnou.png" storage="story/scene2.ks" ]
+[button x=50 y=180 graphic="title/honnou.png" storage="story/scene2.ks" ]
+[button x=50 y=260 graphic="title/honnou.png" storage="title.ks" ]
+
+
+
 graphic="title/button_cg.png"
 [s] 
 
